@@ -2,6 +2,7 @@ import React from 'react'
 // import heroImage from './assets/images/subus-anaekran.png'
 import heroImage from '../images/subus-anaekran.png'
 import { NavLink } from 'react-router'
+import { Typewriter } from 'react-simple-typewriter'
 // import Writter from './assets/pages/Writter'
 
 const Home = () => {
@@ -28,7 +29,17 @@ const Home = () => {
        <img src={heroImage} alt="" />
         <div className="kolge"></div>
         <p>Subhana Alibayova</p>
-        <p className="iam">I'm a Front-end Developer</p>
+        <p className="iam">I'm a {''}
+              <Typewriter
+    words={['Front-end Developer']}
+    loop={true}
+    cursor
+    cursorStyle="|"
+    typeSpeed={80}
+    deleteSpeed={50}
+    delaySpeed={1500}
+  />
+        </p>
     </div>
     
  </>

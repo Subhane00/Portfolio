@@ -1,100 +1,226 @@
-.contact-page{
+
+.contact-page {
     display: flex;
     flex-direction: row;
     width: 100%;
     min-height: 50vh;
-   align-items: center;
-   justify-content: center;
-   margin-top: 50px;
-   .message-me{
-    display: flex;
-    flex-direction: column;
-    .message-p{
-        font-size: 26px;
-        font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 
-
-    }
-    .nameandemail-forcontact{
-        display: flex;
-        width: 300px;
-        .name{
-            margin-right: 10px;
-            input{
-                width: 300px;
-                height:45px;
-                background-color: #161616;
-                border: none;
-            }
-
-        }
-    }
-
-    .subject{
-         width: 610px;
-                height:45px;
-                background-color: #161616;
-                border: none;
-                margin-top: 20px;
-
-    }
-
-    .button-contact{
-        width: 140px;
-        height: 30px;
-        margin-top: 20px;
-       
-        button{
-         padding: 10px;
-        border-radius: 20px;
-        background-color: #00B894;
-        border: 1px solid #00B894;
-        color: white;
-
-        }
-
-    }
-   }
-
-   .contact-info{
-    margin-left: 50px;
-    .info-text{
-      .info-text-p1{
-        font-size: 26px;
-        font-family: 'Courier New', Courier, monospace;
-      }
-      .info-text-p2{
-        width: 400px;
-        color: gray;
-      }
-    }
-
-    .contactinfo-iconandname{
+    .message-me {
         display: flex;
         flex-direction: column;
-       .icons{
-        display: flex;
-        i{
-            font-size: 30px;
-            color: #00B894;
-            margin-bottom: 30px;
-            margin-top: 10px;
-            margin-right: 10px;
+
+        .message-p {
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
         }
-        .name-div{
-            p{
-                margin: 0;
+
+        .nameandemail-forcontact {
+            display: flex;
+            width: 300px;
+
+            .name {
+                margin-right: 10px;
+
+                input {
+                    width: 300px;
+                    height: 45px;
+                    background-color: #161616;
+                    border: none;
+                }
             }
-            .gray-p{
+        }
+
+        .subject {
+            width: 610px;
+            height: 45px;
+            background-color: #161616;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .button-contact {
+            width: 140px;
+            height: 30px;
+            margin-top: 20px;
+
+            button {
+                padding: 10px;
+                border-radius: 20px;
+                background-color: #00B894;
+                border: 1px solid #00B894;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contact-info {
+        margin-left: 50px;
+
+        .info-text {
+            .info-text-p1 {
+                font-size: 26px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .info-text-p2 {
+                width: 400px;
                 color: gray;
-                 a{
-                    color: gray;
-                    text-decoration: none;
+            }
+        }
+
+        .contactinfo-iconandname {
+            display: flex;
+            flex-direction: column;
+
+            .icons {
+                display: flex;
+
+                i {
+                    font-size: 30px;
+                    color: #00B894;
+                    margin-bottom: 30px;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                }
+
+                .name-div {
+                    p { margin: 0; }
+
+                    .gray-p {
+                        color: gray;
+
+                        a {
+                            color: gray;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-page {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 40px;
+        margin-top: 30px;
+
+        .message-me {
+            width: 100%;
+
+            .nameandemail-forcontact {
+                width: 100%;
+
+                .name {
+                    flex: 1;
+                    margin-right: 10px;
+
+                    input {
+                        width: 100%;
+                    }
                 }
             }
 
+            .subject {
+                width: 100%;
+            }
         }
-       }
+
+        .contact-info {
+            margin-left: 0;
+            margin-top: 40px;
+            width: 100%;
+
+            .info-text {
+                .info-text-p2 {
+                    width: 100%;
+                }
+            }
+        }
     }
-   }
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 0 20px;
+
+        .message-me {
+            .nameandemail-forcontact {
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+
+                .name {
+                    margin-right: 0;
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .subject {
+                width: 100%;
+            }
+
+            .button-contact {
+                width: 100%;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+        .contact-info {
+            .contactinfo-iconandname {
+                .icons {
+                    align-items: flex-start;
+
+                    i {
+                        font-size: 22px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 0 16px;
+        margin-top: 20px;
+
+        .message-me {
+            .message-p { font-size: 20px; }
+        }
+
+        .contact-info {
+            .info-text {
+                .info-text-p1 { font-size: 20px; }
+            }
+        }
+    }
+}
+
+
+.message-me input,
+.message-me textarea {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.message-me input::placeholder,
+.message-me textarea::placeholder {
+  color: #aaa;
 }

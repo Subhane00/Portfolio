@@ -34,7 +34,7 @@ const About = () => {
         <div className="nameandemail">
             <div className="name">
                 <p>Name: Alibayova Subhana</p>
-                <p>Age: 20</p>
+                <p>Age: 19</p>
             </div>
             <div className="email">
                 <p>Email: <a href="mailto:subhanaalibayova@gmail.com">subhanaalibayova@gmail.com</a></p>
@@ -43,10 +43,9 @@ const About = () => {
         </div>
         <div className="cv">
            <div className="dw-cv">
-            <a href='./src/public/Cv_Subhana.pdf' download className='download-cv'>Download CV </a>
+            <a href='./src/public/CV_SUBHANA_ALIBAYOVA.pdf' download className='download-cv'>Download CV </a>
             </div>     
              <div className="social-media-for-about">
-            <a href="https://www.instagram.com/elbyvaa_/" target='_blank'><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/subhane-elibeyova-95a835295/" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Subhane00" target='_blank'><i class="fa-brands fa-github"></i></a>
         </div>       

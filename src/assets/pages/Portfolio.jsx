@@ -1,28 +1,16 @@
 import React, { useState } from 'react'
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router';
+import portolio1 from '../images/portolio_1.png'
+import portfolio2 from '../images/portfolio_2.png'
+import portfolio3 from '../images/portfolio_3.png'
+import portfolio4 from '../images/portfolio_4.png'
+import portfolio5 from '../images/portfolio_5.png'
 
 const Portfolio = () => {
 
     const navigate = useNavigate();
 
-    // const projects =[
-    //     {id:1,
-    //      title: 'js', 
-    //     category: 'js',
-    //     img: './src/assets/images/react-project1.png'
-    //     },
-    //     {id:2, title: 'react', category: 'react',
-    //         img: './src/assets/images/react-project1.png'
-    //     }
-    // ]
-
-
-    // const [activeCategory, setActiveCategory] = useState('all')
-    // const [activeImage, setActiveImage] = useState(null);
-
-    // const filteredProjects =
-    //  activeCategory === 'all' ? projects : projects.filter(item => item.category === activeCategory)
   return (
    <>
     <div className="backhome">
@@ -33,32 +21,56 @@ const Portfolio = () => {
           <h4 className='about-me-h4'>Showcasing some of my best work</h4>
     <p className='about-me'>Portfolio</p>
     </div>
-{/* 
-     <button onClick={() => setActiveCategory("all")}>ALL</button>
-        <button onClick={() => setActiveCategory("react")}>React</button>
-        <button onClick={() => setActiveCategory("js")}>JS</button>
 
-       <div className="cards">
-  {filteredProjects.map(item => (
-    <Card key={item.id} style={{ width: '18rem' }}>
-      <Card.Img 
-        variant="top" 
-        src={item.img} 
-        onClick={() => setActiveImage(item.img)}
-        style={{ cursor: 'pointer' }}
-      />
-      <Card.Body>
-        <Card.Title>{item.title}</Card.Title>
-      </Card.Body>
-    </Card>
-  ))}
-</div> */}
+    <div className="container portfolio_box mt-5 ">
+      <div className="row g-5">
+       <div className="col-4">
+        <div className="box-wrapper" style={{ overflow: 'hidden' }} >
+          <img src={portolio1}  alt="" />
+<div className="box-overlay">
+          <a href="https://github-finder-pi-lilac.vercel.app/" target="_blank" rel="noopener noreferrer">View More</a>
+  </div>      
+    </div>
+       </div>
+        <div className="col-4">
+        <div className="box-wrapper">
+          <img src={portfolio2}  alt="" />
+<div className="box-overlay">
+          <a href="https://product-details-fawn.vercel.app/" target="_blank" rel="noopener noreferrer">View More</a>
+  </div>        </div>
+       </div>
+        <div className="col-4">
+        <div className="box-wrapper">
+          <img src={portfolio3}  alt="" />
+<div className="box-overlay">
+          <a href="https://login-page-bice-iota.vercel.app/" target="_blank" rel="noopener noreferrer">View More</a>
 
-{/* {activeImage && (
-  <div className="image-modal" onClick={() => setActiveImage(null)}>
-    <img src={activeImage} alt="" />
-  </div>
-)} */}
+</div>
+          </div>
+       </div>
+        <div className="col-4">
+        <div className="box-wrapper">
+          <img src={portfolio4}  alt="" />
+<div className="box-overlay">
+          <a href="https://subhane00.github.io/ToDoApp/" target="_blank" rel="noopener noreferrer">View More</a>
+
+</div>
+
+          
+        </div>
+       </div>
+        <div className="col-4">
+        <div className="box-wrapper">
+          <img src={portfolio5}  alt="" />
+<div className="box-overlay">
+          <a href="https://subhane00.github.io/Responsive-web/" target="_blank" rel="noopener noreferrer">View More</a>
+
+</div>
+
+        </div>
+       </div>
+      </div>
+    </div>
 
    
    </>
