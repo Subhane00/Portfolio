@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import photo_whoami from '../images/image.png'
+import photo_whoami from '../images/image2.png'
 import { useNavigate } from 'react-router'
 
 const About = () => {
@@ -29,12 +29,14 @@ const About = () => {
         <div className="whoami-text">
             
         <p className='about-p-one'>Who am i?</p>
-        <p className='about-p-two'>I'm Subhana Alibayova, a Front-end Developer and React Enthusiast. </p>
-        <p className='about-p-three'>I am a freelancer based in the Azerbaijan, and I have recently started working in UX/UI design and website development. I am eager to create user-friendly and meaningful products that follow modern design trends. I am motivated and open to learning, turning ideas and visions into valuable products. Paying attention to product evolution helps me prioritize tasks and iterate quickly.</p>
+        <p className='about-p-two'>I’m a Frontend Developer passionate about creating modern, responsive, and user-friendly web experiences.
+ </p>
+        <p className='about-p-three'>I’m a Frontend Developer experienced in building modern and responsive web applications using React.js, Next.js, TypeScript, and JavaScript. I work with Tailwind CSS, Sass, Bootstrap, Redux, and Zustand to create clean and user-friendly interfaces. I also have experience with REST APIs and Git-based workflows, and I’m always focused on learning and improving my skills.
+</p>
         <div className="nameandemail">
             <div className="name">
                 <p>Name: Alibayova Subhana</p>
-                <p>Age: 19</p>
+                <p>Birth Date: 27.06.2006</p>
             </div>
             <div className="email">
                 <p>Email: <a href="mailto:subhanaalibayova@gmail.com">subhanaalibayova@gmail.com</a></p>
@@ -46,8 +48,8 @@ const About = () => {
             <a href='./src/public/CV_SUBHANA_ALIBAYOVA.pdf' download className='download-cv'>Download CV </a>
             </div>     
              <div className="social-media-for-about">
-            <a href="https://www.linkedin.com/in/subhane-elibeyova-95a835295/" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Subhane00" target='_blank'><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/subhana-alibayova-95a835295/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Subhane00" target='_blank'><i className="fa-brands fa-github"></i></a>
         </div>       
         </div>
        

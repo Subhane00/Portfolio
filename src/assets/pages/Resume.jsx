@@ -13,31 +13,19 @@ const Resume = () => {
         { name: "HTML5", level: "pro" },
         { name: "CSS3", level: "pro" },
         { name: "JavaScript", level: "pro" },
-        { name: "React", level: "mid" },
-        { name: "Redux", level: "mid" },
-        { name: "Bootstrap", level: "mid" },
-        { name: "REST APIs", level: "mid" },
-        { name: "Responsive Design", level: "mid" },
-        { name: "TypeScript", level: "beginner" },
+        { name: "React JS", level: "pro" },
+        { name: "Next JS", level: "pro" },
+        { name: "React Redux", level: "pro" },
+        { name: "Bootstrap", level: "pro" },
+        { name: "Tailwind", level: "pro" },
+        { name: "REST APIs", level: "pro" },
+        { name: "Responsive Design", level: "pro" },
+        { name: "TypeScript", level: "pro" },
+        { name: "Zustand", level: "pro" },
+        { name: "Git", level: "pro" },
     ];
 
-    const experience = [
-    {
-        title: "Frontend Development",
-        org: "Peerstack Academy · Subject Exchange Program",
-        date: "Feb 2026 – May 2026 (Expected)",
-        desc: "Practical projects focused on React and modern frontend technologies.",
-        tags: ["React", "Redux", "REST API"],
-        type: "work"
-    },
-    {
-        title: "Frontend Development — GirlsCode",
-        org: "Matrix Academy · Scholarship Program",
-        date: "Sep 2025 – May 2026 (Expected)",
-        desc: "Learned HTML, CSS, JavaScript and React through a scholarship program, building real-world projects.",
-        tags: ["HTML5", "CSS3", "JavaScript", "React"],
-        type: "work"
-    },
+   const experience = [
     {
         title: "Information Security — Bachelor's Degree",
         org: "Azerbaijan Technical University",
@@ -45,6 +33,30 @@ const Resume = () => {
         desc: "Studying Information Security with a GPA of 92.43/100. Core topics include programming fundamentals, networking and system security.",
         tags: ["Programming", "Networking", "Cybersecurity"],
         type: "edu"
+    },
+    {
+        title: "Frontend Development — Girls Code Azerbaijan",
+        org: "Matrix Academy · Scholarship Program",
+        date: "Sep 2025 – May 2026",
+        desc: "Learned HTML, CSS, JavaScript and React through a scholarship program, building real-world projects.",
+        tags: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Next JS"],
+        type: "edu"
+    },
+    {
+        title: "Backend Development",
+        org: "Peerstack Academy · Subject Exchange Program",
+        date: "Feb 2026 – May 2026",
+        desc: "Practical projects focused on React and modern frontend technologies.",
+        tags: ["C"],
+        type: "edu"
+    },
+    {
+        title: "Frontend Developer",
+        org: "Webluna Software",
+        date: "May 2026 - Present",
+        desc: "Developing frontend features for real-world projects in a team environment, working with React, TypeScript and Next JS while coordinating with backend developers on API integration.",
+        tags: ["React", "TypeScript", "Next JS"],
+        type: "work"
     },
 ];
 
@@ -72,47 +84,56 @@ const Resume = () => {
                         </span>
                     ))}
                 </div>
-
-                <div className="skills-legend">
-                    <span className="legend-item">
-                        <span className="skill-dot pro"></span> Proficient
-                    </span>
-                    <span className="legend-item">
-                        <span className="skill-dot mid"></span>  Intermediate
-                    </span>
-                    <span className="legend-item">
-                        <span className="skill-dot beginner"></span> Beginner
-                    </span>
-                </div>
             </div>
 
         
             <div className="resume-timeline-section">
                 <p className="section-label">Education & Experience</p>
-                <h2>Experience</h2>
-
-                <div className="timeline">
-                    {experience.map((item, i) => (
-                        <div className="timeline-item" key={i}>
-                            <div className={`timeline-dot ${item.type}`}></div>
-                            <div className="timeline-card">
-                                <div className="timeline-header">
-                                    <span className="timeline-title">{item.title}</span>
-                                    <span className="timeline-date">{item.date}</span>
-                                </div>
-                                <div className="timeline-org">{item.org}</div>
-                                <p className="timeline-desc">{item.desc}</p>
-                                <div className="timeline-tags">
-                                    {item.tags.map((tag, j) => (
-                                        <span className="tag" key={j}>{tag}</span>
-                                    ))}
-                                </div>
+              <h2>Education</h2>
+            <div className="timeline">
+                {experience.filter(item => item.type === "edu").map((item, i) => (
+                    <div className="timeline-item" key={i}>
+                        <div className={`timeline-dot ${item.type}`}></div>
+                        <div className="timeline-card">
+                            <div className="timeline-header">
+                                <span className="timeline-title">{item.title}</span>
+                                <span className="timeline-date">{item.date}</span>
+                            </div>
+                            <div className="timeline-org">{item.org}</div>
+                            <p className="timeline-desc">{item.desc}</p>
+                            <div className="timeline-tags">
+                                {item.tags.map((tag, j) => (
+                                    <span className="tag" key={j}>{tag}</span>
+                                ))}
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
-        </>
+
+            <h2 style={{marginTop:'30px'}}>Experience</h2>
+            <div className="timeline">
+                {experience.filter(item => item.type === "work").map((item, i) => (
+                    <div className="timeline-item" key={i}>
+                        <div className={`timeline-dot ${item.type}`}></div>
+                        <div className="timeline-card">
+                            <div className="timeline-header">
+                                <span className="timeline-title">{item.title}</span>
+                                <span className="timeline-date">{item.date}</span>
+                            </div>
+                            <div className="timeline-org">{item.org}</div>
+                            <p className="timeline-desc">{item.desc}</p>
+                            <div className="timeline-tags">
+                                {item.tags.map((tag, j) => (
+                                    <span className="tag" key={j}>{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+                        </div>
+                    </>
     )
 }
 

@@ -1,9 +1,7 @@
 import React from 'react'
-// import heroImage from './assets/images/subus-anaekran.png'
-import heroImage from '../images/subus-anaekran.png'
+import heroImage from '../images/anaekran.png'
 import { NavLink } from 'react-router'
 import { Typewriter } from 'react-simple-typewriter'
-// import Writter from './assets/pages/Writter'
 
 const Home = () => {
     

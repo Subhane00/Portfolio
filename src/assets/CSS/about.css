@@ -35,22 +35,24 @@ body{
 }
 
 .who-am-i{
-    width: 100%;
+     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
     gap: 60px;
-    box-sizing: border-box;
+    box-sizing: border-box;     
 
     .image{
-        flex-shrink: 0;
+        flex-shrink: 0;  
 
         img{
-            width: 350px;
-            height: 500px;
-            border-radius: 30px;
+            width: 450px;
+            height: 530px;
+            object-fit: contain;
         }
     }
 
@@ -60,7 +62,7 @@ body{
         display: flex;
         flex-direction: column;
         flex: 1;
-        max-width: 850px;
+        max-width: 950px;
 
         .about-p-one{
             color: #00b894;
@@ -71,7 +73,7 @@ body{
 
         .about-p-two{
             width: 80%;
-            font-size: 38px;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
             color: white;
@@ -108,7 +110,7 @@ body{
         }
 
         .cv{
-            width: 32%;
+            width: 45%;
             display: flex;
             margin-top: 20px;
             justify-content: space-between;
